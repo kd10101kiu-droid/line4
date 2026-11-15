@@ -2,6 +2,7 @@
 node_modules/
 .venv/
 venv/
+.npm-cache/
 
 # Cache and build
 __pycache__/
@@ -10,34 +11,36 @@ dist/
 build/
 .cache/
 
-# Environment and secrets
+# Secrets
 .env
 .env.*
-!.env.example
 *.pem
 *.key
 *.pfx
 credentials.json
 secrets.json
+**/config.json
 
 # Private data
 accounts.csv
-**/accounts.csv
+chats.csv
+backup_*.json
 *.db
 *.sqlite
 *.sqlite3
 *.log
 
-# Hold for security review
-/my/
-/beeper-center/
-/Ai_WorkFlow/
-/automa-main/
-/opencode-dev/
-/line-flow*.automa.json
-/floating_note.py
-
-# Local settings
+# Local files
 .vscode/
 .DS_Store
 Thumbs.db
+/my/
+
+# Pending content review
+/Ai_WorkFlow/
+/line-flow*.automa.json
+/floating_note.py
+/beeper-center/
+
+# Disable imported GitHub workflows
+**/.github/
