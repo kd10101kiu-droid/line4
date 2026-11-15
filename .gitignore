@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# Cache and build
+__pycache__/
+*.pyc
+dist/
+build/
+.cache/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+credentials.json
+secrets.json
+
+# Private data
+accounts.csv
+**/accounts.csv
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Hold for security review
+/my/
+/beeper-center/
+/Ai_WorkFlow/
+/automa-main/
+/opencode-dev/
+/line-flow*.automa.json
+/floating_note.py
+
+# Local settings
+.vscode/
+.DS_Store
+Thumbs.db
